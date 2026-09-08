@@ -1,0 +1,156 @@
+/* база */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* хедер и нав снова */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-link {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: #3498db;
+}
+
+/* экраны */
+.screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px 40px;
+}
+
+#about {
+    background-color: #f4f7f6;
+    border-bottom: 5px solid #3498db;
+}
+
+#services {
+    background-color: #ffffff;
+    border-bottom: 5px solid #2ecc71;
+}
+
+#portfolio {
+    background-color: #f4f7f6;
+    border-bottom: 5px solid #e74c3c;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+#services .content {
+    flex-direction: row-reverse;
+}
+
+.content img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+.text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* футер */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.footer-section h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #fff;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    color: #bdc3c7;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-section a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
